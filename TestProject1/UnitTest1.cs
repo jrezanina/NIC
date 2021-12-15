@@ -18,6 +18,7 @@ namespace TestProject1
 
             Assert.AreEqual(2, delka);
         }
+        [Test]
         public void DelkaStran_pro_spatny_parametr_vraci_nulu()
         {
             Point a = new Point(1, 2);
