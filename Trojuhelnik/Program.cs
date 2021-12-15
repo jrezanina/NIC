@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace Trojuhelnik
 {
-    class Trojuhelnik
+    public class Trojuhelnik
     {
         private Point a;
         private Point b;
