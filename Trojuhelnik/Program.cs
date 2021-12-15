@@ -2,14 +2,15 @@
 using System.Drawing;
 /// <summary>
 /// \mainpage Sestrojení trojúhelníku
-/// \section obsah_sec Obsah
-//  Naše práce obsahuje zjištění délek stran, zjištění obvodu, obsahu a zda je trojúhelník sestavitelný.
+///  Naše práce obsahuje zjištění délek stran, zjištění obvodu, obsahu a zda je trojúhelník sestavitelný.
+///  \author Jan Řezanina
+///  \author Lucie Šlesingerová
+///  \author Kateřina Křížanová
 /// </summary>
 namespace Trojuhelnik
-{ 
+{
     /// <summary>
-    /// <class>Trojuhelnik</class>
-    /// <brief>Třída Trojuhelník slouží k deklaraci a k urční podmínek pro správnou funkčnost.</brief>
+    /// @brief Třída Trojuhelník slouží k deklaraci a k urční podmínek pro správnou funkčnost.
     /// </summary>
     public class Trojuhelnik
     {
@@ -18,7 +19,7 @@ namespace Trojuhelnik
         private Point c;
 
         /// <summary>
-        /// <brief>Deklarace bodů trojúhelníku.</brief>
+        /// @brief Deklarace bodů trojúhelníku.
         /// </summary>
         /// <param name="a">Je proměnná pro bod A trojuhelníku.</param>
         /// <param name="b">Je proměnná pro bod B trojuhelníku.</param>
@@ -31,7 +32,7 @@ namespace Trojuhelnik
             this.c = c;
         }
         /// <summary>
-        /// <brief>Metoda pro výpočet délky stran.</brief>
+        /// @brief Metoda pro výpočet délky stran.
         /// </summary>
         /// <param name="strana">Hodnota strana nese informaci, o kterou stranu se jedná.</param>
         /// <returns>Vrací délky stran trojúhelníků pomocí určených vrcholů nebo 0 v případě špatného zadání.</returns>
@@ -47,8 +48,7 @@ namespace Trojuhelnik
         }
     }
     /// <summary>
-    /// <class>Program</class>
-    /// <brief>Třída Program je pro část kódu, s kterou se bude operovat.</brief>
+    /// @brief Třída Program je pro část kódu, s kterou se bude operovat.
     /// </summary>
     class Program
     {
