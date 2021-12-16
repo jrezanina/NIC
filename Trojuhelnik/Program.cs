@@ -63,6 +63,12 @@ namespace Trojuhelnik
             else
                 return false;
         }
+
+        /// <summary>
+        /// @brief Metoda, která vypočítá obvod trojúhelníku pomocí délky sran.
+        /// Obvod je vypočítaný součtem všech tří stran.
+        /// </summary>
+        /// <returns>Vrací obvod trojúhelníku.</returns>
         public double Obvod()
         {
             return DelkaStrany('a') + DelkaStrany('b') + DelkaStrany('c');
