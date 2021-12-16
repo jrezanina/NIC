@@ -65,5 +65,31 @@ namespace TestProject1
 
             Assert.AreEqual(12.837102637643028, obvod);
         }
+
+        [Test]
+        public void Kontrola_pravouhlosti_trojuhelniku()
+        {
+            Point a = new Point(1, 1);
+            Point b = new Point(4, 1);
+            Point c = new Point(4, 5);
+            Trojuhelnik.Trojuhelnik t = new Trojuhelnik.Trojuhelnik(a, b, c);
+
+            bool pravo = t.Pravouhlost();
+
+            Assert.True(pravo);
+        }
+
+        [Test]
+        public void Kontrola_nepravouhlosti_trojuhelniku()
+        {
+            Point a = new Point(1, 2);
+            Point b = new Point(1, 4);
+            Point c = new Point(3, 4);
+            Trojuhelnik.Trojuhelnik t = new Trojuhelnik.Trojuhelnik(a, b, c);
+
+            bool pravo = t.Pravouhlost();
+
+            Assert.False(pravo);
+        }
     }
 }
