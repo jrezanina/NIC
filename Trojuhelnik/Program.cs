@@ -53,9 +53,7 @@ namespace Trojuhelnik
         /// </summary>
         /// <returns>Vrací True nebo False, podle toho, zda jde trojúhelník sestrojit nebo ne.</returns>
         public bool Sestrojitelnost()
-        {
-            bool check = false;
-            
+        {         
             if ((DelkaStrany('a') + DelkaStrany('b')) > DelkaStrany('c') &&
                 (DelkaStrany('c') + DelkaStrany('b')) > DelkaStrany('a') &&
                 (DelkaStrany('c') + DelkaStrany('a')) > DelkaStrany('b'))
