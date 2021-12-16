@@ -46,6 +46,17 @@ namespace Trojuhelnik
                 return Math.Sqrt((Math.Pow(b.X - a.X, 2) + Math.Pow(b.Y - a.Y, 2)));
             return 0;
         }
+        public bool Sestrojitelnost()
+        {
+            bool check = false;
+
+            if ((DelkaStrany('a') + DelkaStrany('b')) > DelkaStrany('c') &&
+                (DelkaStrany('c') + DelkaStrany('b')) > DelkaStrany('a') &&
+                (DelkaStrany('c') + DelkaStrany('a')) > DelkaStrany('b'))
+                return true;
+            else
+                return false;
+        }
     }
     /// <summary>
     /// @brief Třída Program je pro část kódu, s kterou se bude operovat.
@@ -66,6 +77,15 @@ namespace Trojuhelnik
             Console.WriteLine($"Délka strany a: {t.DelkaStrany('a')}");
             Console.WriteLine($"Délka strany b: {t.DelkaStrany('b')}");
             Console.WriteLine($"Délka strany c: {t.DelkaStrany('c')}");
+
+            if (t.Sestrojitelnost() == true)
+            {
+                Console.WriteLine($"Trojuhelník lze sestrojit.");
+            }
+            else
+            {
+                Console.WriteLine($"Trojuhelník nelze sestrojit.");
+            }
         }
     }
 }
