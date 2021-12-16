@@ -87,6 +87,11 @@ namespace Trojuhelnik
                 return false;
         }
 
+        /// <summary>
+        /// @brief Metoda, která počítá obsah trojúhelníku.
+        /// Obsah se vypočítává s využitím délek stran.
+        /// </summary>
+        /// <returns>Vrací obsah trojúhelníku.</returns>
         public double Obsah()
         {
             double p = (DelkaStrany('a') + DelkaStrany('b') + DelkaStrany('c')) / 2;
