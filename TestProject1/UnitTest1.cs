@@ -53,6 +53,7 @@ namespace TestProject1
 
             Assert.False(sestro);
         }
+        [Test]
         public void Spravny_vypocet_obvodu_trojuhelniku()
         {
             Point a = new Point(2, 4);
