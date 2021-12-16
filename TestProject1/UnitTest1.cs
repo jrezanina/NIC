@@ -91,5 +91,18 @@ namespace TestProject1
 
             Assert.False(pravo);
         }
+
+        [Test]
+        public void Spravny_vypocet_obsahu_trojhelniku()
+        {
+            Point a = new Point(1, 1);
+            Point b = new Point(4, 1);
+            Point c = new Point(4, 5);
+            Trojuhelnik.Trojuhelnik t = new Trojuhelnik.Trojuhelnik(a, b, c);
+
+            double obsah = t.Obsah();
+
+            Assert.AreEqual(6, obsah);
+        }
     }
 }
