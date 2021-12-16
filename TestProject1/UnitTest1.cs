@@ -52,10 +52,18 @@ namespace TestProject1
             bool sestro = t.Sestrojitelnost();
 
             Assert.False(sestro);
-
-
-
         }
+        [Test]
+        public void Spravny_vypocet_obvodu_trojuhelniku()
+        {
+            Point a = new Point(2, 4);
+            Point b = new Point(5, 6);
+            Point c = new Point(7, 8);
+            Trojuhelnik.Trojuhelnik t = new Trojuhelnik.Trojuhelnik(a, b, c);
 
+            double obvod = t.Obvod();
+
+            Assert.AreEqual(12.837102637643028, obvod);
+        }
     }
 }

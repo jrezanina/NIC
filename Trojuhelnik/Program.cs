@@ -61,6 +61,17 @@ namespace Trojuhelnik
             else
                 return false;
         }
+
+        /// <summary>
+        /// @brief Metoda, která vypočítá obvod trojúhelníku pomocí délky sran.
+        /// Obvod je vypočítaný součtem všech tří stran.
+        /// </summary>
+        /// <returns>Vrací obvod trojúhelníku.</returns>
+        public double Obvod()
+        {
+            return DelkaStrany('a') + DelkaStrany('b') + DelkaStrany('c');
+        }
+
     }
     /// <summary>
     /// @brief Třída Program je pro část kódu, s kterou se bude operovat.
@@ -85,6 +96,7 @@ namespace Trojuhelnik
             if (t.Sestrojitelnost() == true)
             {
                 Console.WriteLine($"Trojuhelník lze sestrojit.");
+                Console.WriteLine($"Obvod trojúhelníku je: {t.Obvod()}");
             }
             else
             {
