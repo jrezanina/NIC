@@ -46,10 +46,16 @@ namespace Trojuhelnik
                 return Math.Sqrt((Math.Pow(b.X - a.X, 2) + Math.Pow(b.Y - a.Y, 2)));
             return 0;
         }
+
+        /// <summary>
+        /// @brief Metoda pro zjištění sestrojitelnosti trojúhelníku.
+        /// Podmínka if zjištuje, zda je součet dvou stran větší nez třetí strana.
+        /// </summary>
+        /// <returns>Vrací True nebo False, podle toho, zda jde trojúhelník sestrojit nebo ne.</returns>
         public bool Sestrojitelnost()
         {
             bool check = false;
-
+            
             if ((DelkaStrany('a') + DelkaStrany('b')) > DelkaStrany('c') &&
                 (DelkaStrany('c') + DelkaStrany('b')) > DelkaStrany('a') &&
                 (DelkaStrany('c') + DelkaStrany('a')) > DelkaStrany('b'))
