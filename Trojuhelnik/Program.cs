@@ -86,6 +86,19 @@ namespace Trojuhelnik
             else
                 return false;
         }
+
+        /// <summary>
+        /// @brief Metoda, která počítá obsah trojúhelníku.
+        /// Obsah se vypočítává s využitím délek stran.
+        /// </summary>
+        /// <returns>Vrací obsah trojúhelníku.</returns>
+        public double Obsah()
+        {
+            double p = (DelkaStrany('a') + DelkaStrany('b') + DelkaStrany('c')) / 2;
+
+            return Math.Sqrt(p * (p - DelkaStrany('a')) * (p - DelkaStrany('b')) * (p - DelkaStrany('c')));
+
+        }
     }
     /// <summary>
     /// @brief Třída Program je pro část kódu, s kterou se bude operovat.
@@ -120,6 +133,8 @@ namespace Trojuhelnik
                 {
                     Console.WriteLine($"Trojuhelník není pravoúhlý.");
                 }
+
+                Console.WriteLine($"Obsah trojúhelníku je: {t.Obsah()}");
             }
             else
             {
