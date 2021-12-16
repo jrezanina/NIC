@@ -71,7 +71,15 @@ namespace Trojuhelnik
         {
             return DelkaStrany('a') + DelkaStrany('b') + DelkaStrany('c');
         }
-
+        public bool Pravouhlost()
+        {
+            if (Math.Pow(DelkaStrany('a'), 2) == ((Math.Pow(DelkaStrany('b'), 2) + Math.Pow(DelkaStrany('c'), 2))) ||
+                Math.Pow(DelkaStrany('c'), 2) == ((Math.Pow(DelkaStrany('a'), 2) + Math.Pow(DelkaStrany('b'), 2))) ||
+                Math.Pow(DelkaStrany('b'), 2) == ((Math.Pow(DelkaStrany('a'), 2) + Math.Pow(DelkaStrany('c'), 2))))
+                return true;
+            else
+                return false;
+        }
     }
     /// <summary>
     /// @brief Třída Program je pro část kódu, s kterou se bude operovat.
@@ -84,9 +92,9 @@ namespace Trojuhelnik
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Point a = new Point(3, 4);
-            Point b = new Point(5, 6);
-            Point c = new Point(7, 8);
+            Point a = new Point(1, 1);
+            Point b = new Point(4, 1);
+            Point c = new Point(4, 5);
             Trojuhelnik t = new Trojuhelnik(a, b, c);
 
             Console.WriteLine($"Délka strany a: {t.DelkaStrany('a')}");
@@ -97,11 +105,22 @@ namespace Trojuhelnik
             {
                 Console.WriteLine($"Trojuhelník lze sestrojit.");
                 Console.WriteLine($"Obvod trojúhelníku je: {t.Obvod()}");
+
+                if (t.Pravouhlost() == true)
+                {
+                    Console.WriteLine($"Trojuhelník je pravoúhlý.");
+                }
+                else
+                {
+                    Console.WriteLine($"Trojuhelník není pravoúhlý.");
+                }
             }
             else
             {
                 Console.WriteLine($"Trojuhelník nelze sestrojit.");
             }
+
+            
         }
     }
 }
