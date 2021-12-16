@@ -71,6 +71,8 @@ namespace Trojuhelnik
         {
             return DelkaStrany('a') + DelkaStrany('b') + DelkaStrany('c');
         }
+
+        
         public bool Pravouhlost()
         {
             if (Math.Pow(DelkaStrany('a'), 2) == ((Math.Pow(DelkaStrany('b'), 2) + Math.Pow(DelkaStrany('c'), 2))) ||
