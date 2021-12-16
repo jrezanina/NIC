@@ -72,7 +72,11 @@ namespace Trojuhelnik
             return DelkaStrany('a') + DelkaStrany('b') + DelkaStrany('c');
         }
 
-        
+        /// <summary>
+        /// @brief Metoda, která zjištuje, zda je trojúhelník pravoúhlý.
+        /// Podmínka if zjišťuje, zda se druhá mocnina jedné strany rovná součtu druhých mocnin ostatních stran.
+        /// </summary>
+        /// <returns>Vrací True nebo False, podle toho, zda jde trojúhelník sestrojit nebo ne.</returns>
         public bool Pravouhlost()
         {
             if (Math.Pow(DelkaStrany('a'), 2) == ((Math.Pow(DelkaStrany('b'), 2) + Math.Pow(DelkaStrany('c'), 2))) ||
