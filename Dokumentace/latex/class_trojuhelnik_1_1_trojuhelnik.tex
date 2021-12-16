@@ -1,0 +1,139 @@
+\hypertarget{class_trojuhelnik_1_1_trojuhelnik}{}\doxysection{Trojuhelnik.\+Trojuhelnik Class Reference}
+\label{class_trojuhelnik_1_1_trojuhelnik}\index{Trojuhelnik.Trojuhelnik@{Trojuhelnik.Trojuhelnik}}
+
+
+ 
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_trojuhelnik_1_1_trojuhelnik_a7d8b6aee62667f5c15c545ef9ce30d00}{Trojuhelnik}} (Point a, Point b, Point c)
+\item 
+double \mbox{\hyperlink{class_trojuhelnik_1_1_trojuhelnik_ad41e8f23cebea7828250d3c068762533}{Delka\+Strany}} (char strana)
+\item 
+bool \mbox{\hyperlink{class_trojuhelnik_1_1_trojuhelnik_a563255d0b099e7a8206967910f040383}{Sestrojitelnost}} ()
+\item 
+double \mbox{\hyperlink{class_trojuhelnik_1_1_trojuhelnik_a740660b023cb0b1efb7b8266fe2fdc25}{Obvod}} ()
+\item 
+bool \mbox{\hyperlink{class_trojuhelnik_1_1_trojuhelnik_a28a87dde6d966ec9cc5ae4e42b225f5a}{Pravouhlost}} ()
+\item 
+double \mbox{\hyperlink{class_trojuhelnik_1_1_trojuhelnik_afada188e355da940a5d3c2840dacb5d7}{Obsah}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Třída Trojuhelník slouží k deklaraci a k urční podmínek pro správnou funkčnost. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_trojuhelnik_1_1_trojuhelnik_a7d8b6aee62667f5c15c545ef9ce30d00}\label{class_trojuhelnik_1_1_trojuhelnik_a7d8b6aee62667f5c15c545ef9ce30d00}} 
+\index{Trojuhelnik.Trojuhelnik@{Trojuhelnik.Trojuhelnik}!Trojuhelnik@{Trojuhelnik}}
+\index{Trojuhelnik@{Trojuhelnik}!Trojuhelnik.Trojuhelnik@{Trojuhelnik.Trojuhelnik}}
+\doxysubsubsection{\texorpdfstring{Trojuhelnik()}{Trojuhelnik()}}
+{\footnotesize\ttfamily Trojuhelnik.\+Trojuhelnik.\+Trojuhelnik (\begin{DoxyParamCaption}\item[{Point}]{a,  }\item[{Point}]{b,  }\item[{Point}]{c }\end{DoxyParamCaption})}
+
+
+
+
+
+Deklarace bodů trojúhelníku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & Je proměnná pro bod A trojuhelníku.\\
+\hline
+{\em b} & Je proměnná pro bod B trojuhelníku.\\
+\hline
+{\em c} & Je proměnná pro bod C trojuhelníku.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_trojuhelnik_1_1_trojuhelnik_ad41e8f23cebea7828250d3c068762533}\label{class_trojuhelnik_1_1_trojuhelnik_ad41e8f23cebea7828250d3c068762533}} 
+\index{Trojuhelnik.Trojuhelnik@{Trojuhelnik.Trojuhelnik}!DelkaStrany@{DelkaStrany}}
+\index{DelkaStrany@{DelkaStrany}!Trojuhelnik.Trojuhelnik@{Trojuhelnik.Trojuhelnik}}
+\doxysubsubsection{\texorpdfstring{DelkaStrany()}{DelkaStrany()}}
+{\footnotesize\ttfamily double Trojuhelnik.\+Trojuhelnik.\+Delka\+Strany (\begin{DoxyParamCaption}\item[{char}]{strana }\end{DoxyParamCaption})}
+
+
+
+
+
+Metoda pro výpočet délky stran. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strana} & Hodnota strana nese informaci, o kterou stranu se jedná.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vrací délky stran trojúhelníků pomocí určených vrcholů nebo 0 v případě špatného zadání.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trojuhelnik_1_1_trojuhelnik_afada188e355da940a5d3c2840dacb5d7}\label{class_trojuhelnik_1_1_trojuhelnik_afada188e355da940a5d3c2840dacb5d7}} 
+\index{Trojuhelnik.Trojuhelnik@{Trojuhelnik.Trojuhelnik}!Obsah@{Obsah}}
+\index{Obsah@{Obsah}!Trojuhelnik.Trojuhelnik@{Trojuhelnik.Trojuhelnik}}
+\doxysubsubsection{\texorpdfstring{Obsah()}{Obsah()}}
+{\footnotesize\ttfamily double Trojuhelnik.\+Trojuhelnik.\+Obsah (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+Metoda, která počítá obsah trojúhelníku. Obsah se vypočítává s využitím délek stran. 
+
+\begin{DoxyReturn}{Returns}
+Vrací obsah trojúhelníku.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trojuhelnik_1_1_trojuhelnik_a740660b023cb0b1efb7b8266fe2fdc25}\label{class_trojuhelnik_1_1_trojuhelnik_a740660b023cb0b1efb7b8266fe2fdc25}} 
+\index{Trojuhelnik.Trojuhelnik@{Trojuhelnik.Trojuhelnik}!Obvod@{Obvod}}
+\index{Obvod@{Obvod}!Trojuhelnik.Trojuhelnik@{Trojuhelnik.Trojuhelnik}}
+\doxysubsubsection{\texorpdfstring{Obvod()}{Obvod()}}
+{\footnotesize\ttfamily double Trojuhelnik.\+Trojuhelnik.\+Obvod (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+Metoda, která vypočítá obvod trojúhelníku pomocí délky sran. Obvod je vypočítaný součtem všech tří stran. 
+
+\begin{DoxyReturn}{Returns}
+Vrací obvod trojúhelníku.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trojuhelnik_1_1_trojuhelnik_a28a87dde6d966ec9cc5ae4e42b225f5a}\label{class_trojuhelnik_1_1_trojuhelnik_a28a87dde6d966ec9cc5ae4e42b225f5a}} 
+\index{Trojuhelnik.Trojuhelnik@{Trojuhelnik.Trojuhelnik}!Pravouhlost@{Pravouhlost}}
+\index{Pravouhlost@{Pravouhlost}!Trojuhelnik.Trojuhelnik@{Trojuhelnik.Trojuhelnik}}
+\doxysubsubsection{\texorpdfstring{Pravouhlost()}{Pravouhlost()}}
+{\footnotesize\ttfamily bool Trojuhelnik.\+Trojuhelnik.\+Pravouhlost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+Metoda, která zjištuje, zda je trojúhelník pravoúhlý. Podmínka if zjišťuje, zda se druhá mocnina jedné strany rovná součtu druhých mocnin ostatních stran. 
+
+\begin{DoxyReturn}{Returns}
+Vrací True nebo False, podle toho, zda jde trojúhelník sestrojit nebo ne.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_trojuhelnik_1_1_trojuhelnik_a563255d0b099e7a8206967910f040383}\label{class_trojuhelnik_1_1_trojuhelnik_a563255d0b099e7a8206967910f040383}} 
+\index{Trojuhelnik.Trojuhelnik@{Trojuhelnik.Trojuhelnik}!Sestrojitelnost@{Sestrojitelnost}}
+\index{Sestrojitelnost@{Sestrojitelnost}!Trojuhelnik.Trojuhelnik@{Trojuhelnik.Trojuhelnik}}
+\doxysubsubsection{\texorpdfstring{Sestrojitelnost()}{Sestrojitelnost()}}
+{\footnotesize\ttfamily bool Trojuhelnik.\+Trojuhelnik.\+Sestrojitelnost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+Metoda pro zjištění sestrojitelnosti trojúhelníku. Podmínka if zjištuje, zda je součet dvou stran větší nez třetí strana. 
+
+\begin{DoxyReturn}{Returns}
+Vrací True nebo False, podle toho, zda jde trojúhelník sestrojit nebo ne.
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Program.\+cs\end{DoxyCompactItemize}
