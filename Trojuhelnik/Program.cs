@@ -63,6 +63,11 @@ namespace Trojuhelnik
             else
                 return false;
         }
+        public double Obvod()
+        {
+            return DelkaStrany('a') + DelkaStrany('b') + DelkaStrany('c');
+        }
+
     }
     /// <summary>
     /// @brief Třída Program je pro část kódu, s kterou se bude operovat.
@@ -87,6 +92,7 @@ namespace Trojuhelnik
             if (t.Sestrojitelnost() == true)
             {
                 Console.WriteLine($"Trojuhelník lze sestrojit.");
+                Console.WriteLine($"Obvod trojúhelníku je: {t.Obvod()}");
             }
             else
             {
