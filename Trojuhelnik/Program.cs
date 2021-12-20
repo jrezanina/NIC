@@ -11,6 +11,7 @@ namespace Trojuhelnik
 {
     /// <summary>
     /// @brief Třída Trojuhelník slouží k deklaraci a k určení podmínek pro správnou funkčnost.
+    /// Přidaný koment
     /// </summary>
     public class Trojuhelnik
     {
