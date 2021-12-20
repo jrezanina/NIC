@@ -10,7 +10,7 @@ using System.Drawing;
 namespace Trojuhelnik
 {
     /// <summary>
-    /// @brief Třída Trojuhelník slouží k deklaraci a k urční podmínek pro správnou funkčnost.
+    /// @brief Třída Trojuhelník slouží k deklaraci a k určení podmínek pro správnou funkčnost.
     /// </summary>
     public class Trojuhelnik
     {
