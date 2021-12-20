@@ -1,4 +1,4 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using System.Drawing;
 using Trojuhelnik;
 
@@ -31,7 +31,7 @@ namespace TestProject1
             Assert.AreEqual(0, delka);
         }
         [Test]
-        public void Kontrola_spr�vn�_sestrojitelnosti_podle_delky_stran()
+        public void Kontrola_správné_sestrojitelnosti_podle_delky_stran()
         {
             Point a = new Point(1, 2);
             Point b = new Point(1, 4);
@@ -43,7 +43,7 @@ namespace TestProject1
             Assert.True(sestro);
         }
         [Test]
-        public void Kontrola_nespr�vn�_sestrojitelnosti_podle_delky_stran()
+        public void Kontrola_nesprávné_sestrojitelnosti_podle_delky_stran()
         {
             Point a = new Point(1, 2);
             Point b = new Point(1, 2);
@@ -69,6 +69,7 @@ namespace TestProject1
         [Test]
         public void Kontrola_pravouhlosti_trojuhelniku()
         {
+            //vytvoříme pravoúhlý trojúhelník
             Point a = new Point(1, 1);
             Point b = new Point(4, 1);
             Point c = new Point(4, 5);
@@ -104,5 +105,7 @@ namespace TestProject1
 
             Assert.AreEqual(6, obsah);
         }
+
+        
     }
 }
